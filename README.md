@@ -6,6 +6,12 @@ Stream the logs:
 log stream --predicate 'process == "MacOSVM"'
 ```
 
+Open a new instance of the app:
+
+```
+open -n /path/to/MacOSVM.app
+```
+
 Install and run macOS in a virtual machine using the Virtualization framework.
 
 ## Overview
