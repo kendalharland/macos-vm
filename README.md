@@ -100,7 +100,7 @@ NSLog(@"Starting installation.");
 ``` swift
 let virtualMachineConfiguration = VZVirtualMachineConfiguration()
 
-virtualMachineConfiguration.platform = createMacPlaform()
+virtualMachineConfiguration.platform = createMacPlatform()
 virtualMachineConfiguration.bootLoader = MacOSVirtualMachineConfigurationHelper.createBootLoader()
 virtualMachineConfiguration.cpuCount = MacOSVirtualMachineConfigurationHelper.computeCPUCount()
 virtualMachineConfiguration.memorySize = MacOSVirtualMachineConfigurationHelper.computeMemorySize()

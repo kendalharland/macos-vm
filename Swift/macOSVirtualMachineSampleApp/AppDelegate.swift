@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // MARK: Create the Mac platform configuration.
 
 #if arch(arm64)
-    private func createMacPlaform() -> VZMacPlatformConfiguration {
+    private func createMacPlatform() -> VZMacPlatformConfiguration {
         let macPlatform = VZMacPlatformConfiguration()
 
         let auxiliaryStorage = VZMacAuxiliaryStorage(contentsOf: auxiliaryStorageURL)
@@ -67,7 +67,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private func createVirtualMachine() {
         let virtualMachineConfiguration = VZVirtualMachineConfiguration()
 
-        virtualMachineConfiguration.platform = createMacPlaform()
+        virtualMachineConfiguration.platform = createMacPlatform()
         virtualMachineConfiguration.bootLoader = MacOSVirtualMachineConfigurationHelper.createBootLoader()
         virtualMachineConfiguration.cpuCount = MacOSVirtualMachineConfigurationHelper.computeCPUCount()
         virtualMachineConfiguration.memorySize = MacOSVirtualMachineConfigurationHelper.computeMemorySize()

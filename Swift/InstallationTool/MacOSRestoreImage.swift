@@ -1,4 +1,4 @@
-/*
+ /*
 See the LICENSE.txt file for this sample’s licensing information.
 
 Abstract:
@@ -30,7 +30,10 @@ class MacOSRestoreImage: NSObject {
 
     // MARK: Download the restore image from the network.
 
-    private func downloadRestoreImage(restoreImage: VZMacOSRestoreImage, completionHandler: @escaping () -> Void) {
+    private func downloadRestoreImage(
+        restoreImage: VZMacOSRestoreImage,
+        completionHandler: @escaping () -> Void
+    ) {
         let downloadTask = URLSession.shared.downloadTask(with: restoreImage.url) { localURL, response, error in
             if let error = error {
                 fatalError("Download failed. \(error.localizedDescription).")
