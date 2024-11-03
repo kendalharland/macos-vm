@@ -1,5 +1,11 @@
 # Running macOS in a virtual machine on Apple silicon 
 
+Stream the logs:
+
+```
+log stream --predicate 'process == "MacOSVM"'
+```
+
 Install and run macOS in a virtual machine using the Virtualization framework.
 
 ## Overview
